@@ -7,12 +7,22 @@ float determineCommissionRate(double sales);
 
 int main()
 {
-    float realSales, commissionRate, advancedPay;
+    float sales, commissionRate, advancedPay;
+    float pay;
 
     sales = getSales();
+    advancedPay = getAdvancedPay();
+    commissionRate = determineCommissionRate(sales);
+
+    pay = sales * commissionRate - advancedPay;
+
+    printf("The pay is $ %f", pay);
+
+    if(pay < 0)
+        printf("The salesperson must reinburse the company");
 
 }
-
+ 
 float getSales()
 {
     float monthlySales;
