@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 float getSales();
 float getAdvancedPay();
@@ -14,7 +15,7 @@ int main()
     advancedPay = getAdvancedPay();
     commissionRate = determineCommissionRate(sales);
 
-    pay = sales * commissionRate - advancedPay;
+    pay = (sales * commissionRate) - advancedPay;
 
     printf("The pay is $ %f", pay);
 
@@ -48,15 +49,15 @@ float determineCommissionRate(double sales)
     float rate = 0;
 
     if(sales < 10000.00){
-        rate == 0.10;
+        rate = 0.10;
     }else if(sales >= 10000.00 && sales <= 14999.99){
-        rate == 0.12;
+        rate = 0.12;
     }else if(sales >= 15000.00 && sales <= 17999.99){
-        rate == 0.14;
+        rate = 0.14;
     }else if(sales >= 18000.00 && sales <= 21999.99){
-        rate == 0.16;
+        rate = 0.16;
     }else{
-        rate == 0.18;
+        rate = 0.18;
     }
     return rate;
 }

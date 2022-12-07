@@ -1,0 +1,3 @@
+/home/monte/Desktop/Intro-Programming/Music_App/cmake-build-debug/CMakeFiles/Music_App.dir
+/home/monte/Desktop/Intro-Programming/Music_App/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/monte/Desktop/Intro-Programming/Music_App/cmake-build-debug/CMakeFiles/rebuild_cache.dir
